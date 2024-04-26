@@ -1,0 +1,165 @@
+/* src/App */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* src/HeadlinesList */
+
+/* Style the headlines container */
+.HeadlinesList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Style individual headline items */
+.HeadlineItem {
+  border: 20px solid #d3d3d3;
+  margin: 10px;
+  padding: 10px;
+  max-width: 675px;
+}
+
+/* Style headline titles */
+.HeadlineItem h2 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  text-align: justify;
+}
+
+/* Style source and author information */
+.HeadlineItem p {
+  font-size: 1.4rem;
+  margin-bottom: 4px;
+  text-align: justify;
+}
+
+/* Style description */
+.HeadlineItem p1 {
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+  text-align: justify;
+}
+
+
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 0px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 600px;
+  }
+}
+
+
+/* Style thumbnail images */
+.HeadlineItem img {
+  flex: 1;
+  max-width: 250px;
+  max-height: 250px;
+}
+
+
+/* src/NavBar */
+
+/* Style the navigation bar */
+.NavBar {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Style the brand/title */
+.NavBar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Style the menu items */
+.NavBar-menu {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  margin: 0;
+}
+
+/* Style the menu item links */
+.NavBar-menu li {
+  padding: 10px;
+}
+
+/* Style the "Home" menu item link in white color */
+.NavBar-menu li:first-child a {
+  color: white;
+  text-decoration: none; /* Remove underlines from the link */
+}
+
+/* Style the date and time */
+.NavBar-dateTime {
+  font-size: 0.9rem;
+}
+
+
+/* src/Footer */
+.Footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  /* Stick the footer to the bottom */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
